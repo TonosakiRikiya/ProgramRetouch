@@ -151,7 +151,7 @@ public class UserDAO {
 			con = DBManager.getConnection();
 			st = con.prepareStatement("UPDATE t_user SET name=?, login_id=?, address=? WHERE id=?;");
 			st.setString(1, udb.getName());
-			st.setString(2, udb.getLoginId());
+ 			st.setString(2, udb.getLoginId());
 			st.setString(3, udb.getAddress());
 			st.setInt(4, udb.getId());
 			st.executeUpdate();

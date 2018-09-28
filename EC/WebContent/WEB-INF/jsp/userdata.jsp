@@ -71,8 +71,8 @@
 								<c:forEach var="udb" items="${BuyDataList}">
 
 									<tr>
-										<td class="center"><a
-											href="UserBuyHistoryDetail?buyId=${udb.id}"
+										<td class="center">
+										<a href="UserBuyHistoryDetail?buyId=${udb.id}"
 											class="btn-floating btn waves-effect waves-light "> <i
 												class="material-icons">details</i></a></td>
 										<td class="center">${udb.formatDate}</td>

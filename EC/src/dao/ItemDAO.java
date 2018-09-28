@@ -16,14 +16,6 @@ import beans.ItemDataBeans;
  */
 public class ItemDAO {
 
-
-
-	/**
-	 * ランダムで引数指定分のItemDataBeansを取得
-	 * @param limit 取得したいかず
-	 * @return <ItemDataBeans>
-	 * @throws SQLException
-	 */
 	public static ArrayList<ItemDataBeans> getRandItem(int limit) throws SQLException {
 		Connection con = null;
 		PreparedStatement st = null;
